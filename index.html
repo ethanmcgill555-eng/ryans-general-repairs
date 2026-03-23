@@ -3,78 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan's General Contracting | Peterborough</title>
-  <meta name="description" content="Ryan's General Contracting - Reliable contractor in Peterborough. Renovations, decks, fencing, and more." />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <title>Ryan's General Contracting</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav">
-    <h1 class="logo">Ryan's Contracting</h1>
-    <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="tel:+17050000000" class="btn primary">Call Now</a>
-  </div>
+<header>
+  <h1>Ryan's General Contracting</h1>
+  <p>Quality Work You Can Trust • Serving Peterborough & Area</p>
 </header>
 
-<!-- HERO -->
+<nav>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <section class="hero">
-  <div class="hero-content">
-    <h1>Reliable General Contracting</h1>
-    <p>Serving Peterborough & surrounding areas</p>
-    <a href="#contact" class="btn primary">Get a Free Quote</a>
+  <h2>Your Local Construction & Renovation Experts</h2>
+  <p>From small repairs to full renovations — we get it done right.</p>
+  <button onclick="scrollToContact()">Get a Free Quote</button>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Home Renovations</div>
+    <div class="card">Decks & Fences</div>
+    <div class="card">Basement Finishing</div>
+    <div class="card">Drywall & Painting</div>
+    <div class="card">Flooring Installation</div>
+    <div class="card">General Repairs</div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Renovations</h3>
-        <p>Kitchens, bathrooms, basements, full remodels.</p>
-      </div>
-      <div class="card">
-        <h3>Exterior Work</h3>
-        <p>Decks, fences, siding, outdoor projects.</p>
-      </div>
-      <div class="card">
-        <h3>Custom Projects</h3>
-        <p>Built to your specifications with quality craftsmanship.</p>
-      </div>
-    </div>
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Ryan's General Contracting proudly serves the Peterborough area with reliable,
+    high-quality workmanship. We focus on customer satisfaction, attention to detail,
+    and delivering projects on time and on budget.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+  <div class="grid">
+    <img src="https://via.placeholder.com/300" alt="Project 1">
+    <img src="https://via.placeholder.com/300" alt="Project 2">
+    <img src="https://via.placeholder.com/300" alt="Project 3">
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section alt">
-  <div class="container small">
-    <h2>About Ryan's Contracting</h2>
-    <p>Ryan's General Contracting is a trusted local contractor in Peterborough. We focus on quality work, reliability, and completing every job right the first time.</p>
-  </div>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Peterborough, Ontario</p>
+  <p>📞 <span id="phone">(705) 000-0000</span></p>
+  <p>📧 <span id="email">ryanscontracting@email.com</span></p>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="formMessage"></p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section contact-section">
-  <div class="container small">
-    <h2>Contact Us</h2>
-    <p>Fill out the form below or call us directly for a free quote.</p>
-    <form id="contactForm" class="form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Describe your project" required></textarea>
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-    <p id="formMessage"></p>
-  </div>
-</section>
+<footer>
+  <p>© 2026 Ryan's General Contracting | All Rights Reserved</p>
+</footer>
 
+<script src="script.js"></script>
+</body>
+</html>
