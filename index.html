@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan's General Contracting</title>
+  <title>CP General Contracting</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
+<header>
   <div class="container">
-    <h1>Ryan's General Contracting</h1>
-    <p>Peterborough & Surrounding Area</p>
+    <h1>CP General Contracting</h1>
+    <p>Real Work. Honest Prices. Done Right.</p>
   </div>
 </header>
 
-<nav id="navbar">
-  <div class="container nav-flex">
+<nav>
+  <div class="container nav">
     <a href="#">Home</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -25,69 +25,74 @@
 </nav>
 
 <section class="hero">
-  <div class="overlay">
-    <h2>Built Right. Built to Last.</h2>
-    <p>Renovations • Decks • Repairs • Full Projects</p>
-    <button onclick="scrollToContact()">Get a Free Estimate</button>
+  <div class="hero-text">
+    <h2>Need Work Done? Let’s Get It Built.</h2>
+    <p>No runaround. No surprises. Just solid work you can count on.</p>
+    <button onclick="scrollToContact()">Get a Free Quote</button>
   </div>
 </section>
 
-<section class="highlight">
-  <h2>Why Choose Us?</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>✔ Reliable</h3>
-      <p>We show up, communicate clearly, and finish the job.</p>
+<section class="trust">
+  <div class="container grid">
+    <div>
+      <h3>✔ 18+ Years Experience</h3>
+      <p>We’ve handled everything from small jobs to full builds.</p>
     </div>
-    <div class="card">
-      <h3>✔ Quality Work</h3>
-      <p>Attention to detail and craftsmanship on every project.</p>
+    <div>
+      <h3>✔ Straightforward Pricing</h3>
+      <p>No hidden costs. You know what you're paying for.</p>
     </div>
-    <div class="card">
-      <h3>✔ Local</h3>
-      <p>Proudly serving Peterborough and nearby communities.</p>
+    <div>
+      <h3>✔ Local & Reliable</h3>
+      <p>Serving Belleville, Peterborough & surrounding areas.</p>
     </div>
   </div>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">🏠 Full Renovations</div>
-    <div class="card">🪵 Decks & Fences</div>
-    <div class="card">🔨 Basement Finishing</div>
-    <div class="card">🎨 Drywall & Painting</div>
-    <div class="card">🧱 Flooring</div>
-    <div class="card">🛠 General Repairs</div>
+  <h2>What We Do</h2>
+  <div class="container grid">
+    <div class="card">🏠 Full Home Renovations</div>
+    <div class="card">🧱 Additions & Conversions</div>
+    <div class="card">🛠 General Contracting</div>
+    <div class="card">🚿 Bathrooms & Kitchens</div>
+    <div class="card">🔨 Framing & Structural Work</div>
+    <div class="card">🏗 New Builds</div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      We're not a big corporate crew — just experienced contractors who take pride in doing things properly.
+      We show up, we communicate, and we don’t cut corners.
+    </p>
+    <p>
+      Whether you're updating a space or starting from scratch, we’ll walk you through it and get it done right.
+    </p>
   </div>
 </section>
 
 <section class="cta">
-  <h2>Have a Project in Mind?</h2>
-  <p>Let’s bring it to life. Get a fast, free quote today.</p>
-  <button onclick="scrollToContact()">Contact Us</button>
-</section>
-
-<section id="about">
-  <h2>About Ryan's Contracting</h2>
-  <p>
-    We’re a local, hardworking team focused on delivering solid, honest work.
-    Whether it's a small repair or a full renovation, we take pride in doing it right the first time.
-  </p>
+  <h2>Got a Project?</h2>
+  <p>Send us a message — we’ll take a look and give you a straight answer.</p>
+  <button onclick="scrollToContact()">Start Now</button>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-box">
-    <p>📍 Peterborough, Ontario</p>
-    <p>📞 (705) 000-0000</p>
-    <p>📧 ryanscontracting@email.com</p>
+  <h2>Contact Us</h2>
+
+  <div class="contact-info">
+    <p>📍 Belleville / Peterborough Area</p>
+    <p>📞 (705) 934-8272</p>
+    <p>📧 cp.gen.contracting@gmail.com</p>
   </div>
 
   <form id="contactForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Tell us about your project..." required></textarea>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="What do you need done?" required></textarea>
     <button type="submit">Send Message</button>
   </form>
 
@@ -95,7 +100,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Ryan's General Contracting</p>
+  <p>© 2026 CP General Contracting</p>
 </footer>
 
 <script src="script.js"></script>
