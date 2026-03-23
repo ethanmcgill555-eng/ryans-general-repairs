@@ -6,132 +6,133 @@
 }
 
 body {
-  background: #f9f9f9;
-  color: #333;
+  background: #f5f5f5;
+  color: #222;
 }
 
-/* Layout */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
 }
 
-/* Top bar */
-.topbar {
-  background: #1f2937;
+/* Header */
+header {
+  background: #111;
   color: white;
-  padding: 15px 0;
   text-align: center;
+  padding: 20px;
 }
 
-/* Navbar */
-#navbar {
-  background: #ff7a00;
+/* Nav */
+nav {
+  background: #ff6a00;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
-.nav-flex {
+.nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-#navbar a {
+nav a {
   color: white;
-  padding: 15px;
   text-decoration: none;
+  padding: 15px;
   font-weight: bold;
-}
-
-#navbar a:hover {
-  background: rgba(0,0,0,0.2);
-  border-radius: 5px;
 }
 
 /* Hero */
 .hero {
+  background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd') center/cover;
   height: 80vh;
-  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.overlay {
-  background: rgba(0,0,0,0.6);
+.hero-text {
+  background: rgba(0,0,0,0.65);
   color: white;
   padding: 40px;
-  text-align: center;
   border-radius: 10px;
+  text-align: center;
 }
 
-.overlay h2 {
-  font-size: 40px;
+.hero-text h2 {
+  font-size: 38px;
 }
 
-.overlay button {
+.hero-text button {
   margin-top: 20px;
   padding: 12px 25px;
+  background: #ff6a00;
   border: none;
-  background: #ff7a00;
   color: white;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-/* Sections */
-section {
-  padding: 60px 20px;
-  text-align: center;
+/* Trust */
+.trust {
+  background: #fff3e8;
+  padding: 50px 0;
 }
 
-/* Grid */
 .grid {
-  margin-top: 30px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* Cards */
+/* Services */
+#services {
+  padding: 60px 0;
+  text-align: center;
+}
+
 .card {
   background: white;
   padding: 25px;
   border-radius: 10px;
   transition: 0.3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-/* Highlight section */
-.highlight {
-  background: #fff3e6;
+/* About */
+.about {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 /* CTA */
 .cta {
-  background: #1f2937;
+  background: #222;
   color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .cta button {
   margin-top: 20px;
   padding: 12px 25px;
-  background: #ff7a00;
+  background: #ff6a00;
   border: none;
   color: white;
-  cursor: pointer;
 }
 
 /* Contact */
-.contact-box {
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-info {
   margin-bottom: 20px;
 }
 
@@ -146,21 +147,19 @@ input, textarea {
   margin-bottom: 10px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 button[type="submit"] {
-  background: #ff7a00;
+  background: #ff6a00;
   color: white;
   border: none;
   padding: 12px;
-  cursor: pointer;
 }
 
 /* Footer */
 footer {
   background: #111;
   color: white;
-  padding: 15px;
   text-align: center;
+  padding: 15px;
 }
